@@ -607,11 +607,12 @@ var3=33.2
 var4=71
 var5=$(bc << EOF
 scale = 4
-a1 = ( $var1 * $var2)
+a1 = ($var1 * $var2)
 b1 = ($var3 * $var4)
 a1 + b1
-EOF )
-echo The final answer for this mess is $var5 $
+EOF
+)
+echo The final answer for this mess is $var5
 ```
 
 将选项和表达式放在脚本的不同行中可以让处理过程变得更清晰，提高易读性。EOF 字符串标识了重定向给 bc 命令的数据的起止。当然，必须用命令替换符号标识出用来给变量赋值的命令。
