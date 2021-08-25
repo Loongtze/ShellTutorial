@@ -732,7 +732,7 @@ do
     cat >> $outfile << EOF
         INSERT INTO members (lname,fname,address,city,state,zip) VALUES
         ('$lname', '$fname', '$address', '$city', '$state', '$zip');
-        EOF
+EOF
 done < ${1}
 $
 ```
@@ -774,7 +774,7 @@ $
 运行脚本时，显示器上不会出现任何输出：
 
 ```bash
-$ ./test23 < members.csv
+$ ./test23 members.csv
 $
 ```
 
